@@ -20,7 +20,7 @@ url = getQueryVariable("url");
     s.setAttribute('class', 'zalo-comment-plugin');
     s.setAttribute('data-appid', 1483258563978392201);
     s.setAttribute('data-size', 5);
-    s.setAttribute('data-href', url);
+    if (url) {s.setAttribute('data-href', url);}
     (d.body).appendChild(s);
 })();
 </script>
