@@ -13,7 +13,8 @@ function getQueryVariable(variable) {
     }
     return(false);
 }
-var url = getQueryVariable("url");
+var url = false;
+url = getQueryVariable("url");
 (function() {
     var d = document, s = d.createElement('div');
     s.setAttribute('class', 'zalo-comment-plugin');
